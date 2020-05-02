@@ -1,0 +1,107 @@
+.navbar {
+    justify-content: space-between;
+    background-color: white;
+}
+
+span {
+    padding-right: 2rem;
+    font-weight: 200;
+}
+
+mat-divider {
+    border-top-color: seagreen;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+#search {
+    padding-left: 2rem !important;
+    font-size: 30px !important;
+    vertical-align: top;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+.white-icon {
+    color: white;
+}
+
+#heading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#text {
+    height: auto;
+    color: white;
+    font-weight: 200;
+    font-size: small;
+    line-height: initial;
+    overflow-wrap: break-word;
+}
+
+#copyright {
+    font-size: 10px !important;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+#copyright-text {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#contact-info {
+    height: auto;
+    color: white;
+    font-weight: 200;
+    font-size: small;
+    line-height: initial;
+}
+
+mat-list-item {
+    height: auto !important;
+}
+
+#footer-item {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 2rem;
+}
+
+#logo {
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+}
+
+#logoBlock {
+    padding-top: 10px;
+}
+
+input {
+    height: 29px;
+    background-color: white;
+}
+
+#subscription {
+    padding-top: 10px;
+    height: 25px;
+}
+
+#SubscribeButton {
+    background-color: seagreen;
+    border-radius: 0px;
+}

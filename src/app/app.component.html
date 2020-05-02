@@ -1,21 +1,84 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!--Navbar-->
+<mat-toolbar class="navbar">
+    <div>Moment For Women</div>
+    <div>
+        <span href="...">Topics</span>
+        <span href="...">About</span>
+        <span href="...">MFW TV</span>
+        <button mat-raised-button color="warn">JOIN</button>
+        <mat-icon id="search">search</mat-icon>
+    </div>
+</mat-toolbar>
+<mat-divider></mat-divider>
 
 <router-outlet></router-outlet>
+<div class="footer">
+
+    <div id="footer-item">
+        <p id="heading">CONTACT</p>
+        <mat-list>
+            <mat-list-item>
+                <mat-icon class="white-icon" mat-list-icon>room</mat-icon>
+                <div mat-line id="contact-info">
+                    44 Idiroko Road, Sango Ota Ogun State, Nigeria
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon class="white-icon" mat-list-icon>email</mat-icon>
+                <div mat-line id="contact-info">
+                    momentforwomen@gmail.com
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon class="white-icon" mat-list-icon>call</mat-icon>
+                <div mat-line id="contact-info">
+                    +2108071207385
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <div id="footer-item">
+        <p id="heading">
+            ABOUT
+        </p>
+        <p id="text">Moment For Women is movement for gender equality in Africa</p>
+    </div>
+    <div id="footer-item">
+        <p id="heading">Subscribe to Our Newsletter</p>
+        <div id="subscription">
+            <input matInput placeholder="pat@example.com" type="email">
+            <button mat-button id="SubscribeButton">Subscribe</button>
+
+        </div>
+
+    </div>
+
+    <div id="footer-item">
+        <p id="heading">
+            SPONSORS
+        </p>
+
+        <mat-list>
+            <mat-list-item style="color: white;">
+                AGE Network
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <div id="footer-item">
+        <p id="heading">
+            Follow Us On
+        </p>
+        <div id="logoBlock">
+            <img id="logo" src="../assets/twitter-icon--pretty-social-media-iconset--custom-icon-design-29.png">
+            <img id="logo" src="../assets/fb.png">
+        </div>
+
+
+    </div>
+    <div id="footer-item">
+        <p id="copyright-text">
+            <mat-icon id="copyright" inline="true">copyright</mat-icon>2020 Moment For Women</p>
+    </div>
+
+</div>
