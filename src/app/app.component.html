@@ -3,10 +3,21 @@
 <mat-toolbar class="navbar">
     <div>Moment For Women</div>
     <div>
-        <span href="...">Topics</span>
-        <span href="...">About</span>
-        <span href="...">MFW TV</span>
-        <button mat-raised-button color="warn">JOIN</button>
+        <button mat-button [matMenuTriggerFor]="topics" id="menu_toolbar">Topics</button>
+        <mat-menu #topics="matMenu">
+            <span mat-menu-item routerLink="topics/HealthAndWellbeing">Health & Wellbeing</span>
+            <span mat-menu-item routerLink="topics/InclusiveGovernance">Inclusive Governance</span>
+            <span mat-menu-item routerLink="topics/EconomicAndFinancialInclusion">Economic & Financial Inclusion</span>
+            <span mat-menu-item routerLink="topics/GenderBasedViolence">Gender Based Violence</span>
+            <span mat-menu-item routerLink="topics/DisabilityInclusion"> Disability Inclusion</span>
+            <span mat-menu-item routerLink="topics/Relationships">Relationships</span>
+            <span mat-menu-item routerLink="topics/WomenInLeadership">Women in Leadership</span>
+            <span mat-menu-item routerLink="topics/HumanRights">Human Rights</span>
+            <span mat-menu-item routerLink="topics/PeaceBuilding">Peace Building</span>
+        </mat-menu>
+        <button mat-button id="menu_toolbar" routerLink='about'>About</button>
+        <button mat-button id="menu_toolbar">MFW TV</button>
+        <button mat-raised-button color="warn">Be Our Reporter</button>
         <mat-icon id="search">search</mat-icon>
     </div>
 </mat-toolbar>

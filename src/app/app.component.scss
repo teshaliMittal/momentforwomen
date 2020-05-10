@@ -3,13 +3,8 @@
     background-color: white;
 }
 
-span {
-    padding-right: 2rem;
-    font-weight: 200;
-}
-
 mat-divider {
-    border-top-color: seagreen;
+    border-top-color: #84C225;
     border-top-width: 2px;
     border-top-style: solid;
 }
@@ -102,6 +97,25 @@ input {
 }
 
 #SubscribeButton {
-    background-color: seagreen;
+    background-color: #84C225;
     border-radius: 0px;
+}
+
+#menu_toolbar:hover {
+    background-color: black;
+    color: white;
+    padding-right: 2rem;
+    font-weight: 200;
+}
+
+.mat-menu-content {
+    background-color: black !important;
+}
+
+.mat-menu-item {
+    color: white;
+}
+
+.mat-menu-item:hover {
+    background-color: #84C225 !important;
 }
