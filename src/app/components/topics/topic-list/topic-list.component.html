@@ -1,1 +1,6 @@
-<button mat-flat-button color="warn">{{topic}}</button>
+<div class="main-content">
+    <button mat-button [ngStyle]="{'background-color': getRandomColor()}" id="topic-heading">{{topic}}</button>
+    <div id="cards" *ngFor="let article of articles">
+        <mat-card (click)="loadDetail(article)">Simple card</mat-card>
+    </div>
+</div>

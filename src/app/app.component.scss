@@ -1,12 +1,8 @@
 .navbar {
     justify-content: space-between;
     background-color: white;
-}
-
-mat-divider {
-    border-top-color: #84C225;
-    border-top-width: 2px;
-    border-top-style: solid;
+    border-bottom: 1px solid #84C225;
+    opacity: 1;
 }
 
 #search {
@@ -80,6 +76,7 @@ mat-list-item {
     height: 25px;
     width: 25px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 #logoBlock {
@@ -104,7 +101,6 @@ input {
 #menu_toolbar:hover {
     background-color: black;
     color: white;
-    padding-right: 2rem;
     font-weight: 200;
 }
 
@@ -114,6 +110,7 @@ input {
 
 .mat-menu-item {
     color: white;
+    font-size: 16px;
 }
 
 .mat-menu-item:hover {

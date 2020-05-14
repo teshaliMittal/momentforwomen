@@ -8,20 +8,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
 import { TopicListComponent } from './components/topics/topic-list/topic-list.component';
 import { TopicDetailComponent } from './components/topics/topic-detail/topic-detail.component';
+import { MfwTvComponent } from './components/mfw-tv/mfw-tv.component';
+import { JoinComponent } from './components/join/join.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     TopicListComponent,
-    TopicDetailComponent
+    TopicDetailComponent,
+    MfwTvComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

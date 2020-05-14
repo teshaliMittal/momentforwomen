@@ -1,7 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!--Navbar-->
 <mat-toolbar class="navbar">
-    <div>Moment For Women</div>
+    <div routerLink="">Moment For Women</div>
     <div>
         <button mat-button [matMenuTriggerFor]="topics" id="menu_toolbar">Topics</button>
         <mat-menu #topics="matMenu">
@@ -16,12 +14,12 @@
             <span mat-menu-item routerLink="topics/PeaceBuilding">Peace Building</span>
         </mat-menu>
         <button mat-button id="menu_toolbar" routerLink='about'>About</button>
-        <button mat-button id="menu_toolbar">MFW TV</button>
-        <button mat-raised-button color="warn">Be Our Reporter</button>
+        <button mat-button id="menu_toolbar" routerLink='tv'>MFW TV</button>
+        <button mat-raised-button color="warn" routerLink='join'>Be Our Reporter</button>
         <mat-icon id="search">search</mat-icon>
     </div>
 </mat-toolbar>
-<mat-divider></mat-divider>
+
 
 <router-outlet></router-outlet>
 <div class="footer">
@@ -71,7 +69,7 @@
         </p>
 
         <mat-list>
-            <mat-list-item style="color: white;">
+            <mat-list-item style="color: white;" href="...">
                 AGE Network
             </mat-list-item>
         </mat-list>
