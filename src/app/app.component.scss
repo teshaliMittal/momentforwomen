@@ -9,15 +9,16 @@
     padding-left: 2rem !important;
     font-size: 30px !important;
     vertical-align: top;
+    cursor: pointer;
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: fixed;
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 200px;
     bottom: 0;
     background-color: black;
     color: white;
@@ -115,4 +116,23 @@ input {
 
 .mat-menu-item:hover {
     background-color: #84C225 !important;
+}
+
+#mfw_logo {
+    height: 50px;
+    width: 174px;
+    cursor: pointer;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    cursor: pointer;
 }
