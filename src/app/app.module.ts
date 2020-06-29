@@ -11,6 +11,10 @@ import { TopicDetailComponent } from './components/topics/topic-detail/topic-det
 import { MfwTvComponent } from './components/mfw-tv/mfw-tv.component';
 import { JoinComponent } from './components/join/join.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
+import { MfwMagComponent } from './components/mfw-mag/mfw-mag.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
     TopicListComponent,
     TopicDetailComponent,
     MfwTvComponent,
-    JoinComponent
+    JoinComponent,
+    HeaderComponent,
+    MfwMagComponent,
+    FooterComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

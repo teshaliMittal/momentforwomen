@@ -1,0 +1,79 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    .white-icon {
+        color: white;
+    }
+    #heading {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #text {
+        height: auto;
+        color: white;
+        font-weight: 200;
+        font-size: small;
+        line-height: initial;
+        overflow-wrap: break-word;
+    }
+    #copyright {
+        font-size: 10px !important;
+        height: 10px !important;
+        width: 10px !important;
+    }
+    #copyright-text {
+        font-size: 10px;
+        font-weight: 100;
+    }
+    #contact-info {
+        height: auto;
+        color: white;
+        font-weight: 200;
+        font-size: small;
+        line-height: initial;
+    }
+    #footer-item {
+        display: inline-block;
+        padding-top: 10px;
+        padding-right: 2rem;
+    }
+    #logo {
+        height: 25px;
+        width: 25px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    input {
+        height: 29px;
+        background-color: white;
+    }
+    #subscription {
+        padding-top: 10px;
+        height: 25px;
+    }
+    #SubscribeButton {
+        background-color: #84c225;
+        border-radius: 0px;
+    }
+    #mfw_logo {
+        height: 50px;
+        width: 174px;
+        cursor: pointer;
+    }
+    #container {
+        min-height: 100%;
+        position: relative;
+    }
+    #logoBlock {
+        padding-top: 10px;
+    }
+}

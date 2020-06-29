@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +8,14 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'mfw-ui-v8';
-  cursorLink = "../assets/Arrow right default state.png";
-  mouseOut = "../assets/Arrow right default state.png";
-  mouseOver = "../assets/Arrow right hover state.png"
+  isMag: boolean = false;
+  public onRouterOutletActivate(event: any) {
+    let component = event.constructor.name;
+    if (component.indexOf("Mag") != -1) {
+      this.isMag = true;
+    } else {
+      this.isMag = false;
+    }
+  }
+
 }

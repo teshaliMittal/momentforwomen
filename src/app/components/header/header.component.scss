@@ -1,0 +1,51 @@
+.navbar {
+    background-color: black;
+    justify-content: space-evenly;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#search-form {
+    float: right;
+    border: 25px solid black;
+    background-color: black;
+    z-index: 100;
+    input {
+        border: 1px solid #84c225;
+        width: 400px;
+        height: 35px;
+    }
+    button {
+        background-color: #84c225;
+        border-radius: 0px;
+        margin-left: 5px;
+        color: white;
+        height: 40px;
+    }
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+.mat-menu-item:hover {
+    background-color: #94506e !important;
+    color: white;
+}
+
+#main-logo {
+    width: 100%;
+    cursor: pointer;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+}

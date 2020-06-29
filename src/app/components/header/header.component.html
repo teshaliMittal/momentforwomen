@@ -1,0 +1,34 @@
+<div id="main-logo" [routerLink]="routerLink">
+    <img [src]="logoImage" alt="...">
+</div>
+<mat-toolbar class="navbar">
+
+    <button mat-button [matMenuTriggerFor]="topics">TOPICS</button>
+    <mat-menu #topics="matMenu">
+        <span mat-menu-item routerLink="topics/HealthAndWellbeing">Health & Wellbeing</span>
+        <span mat-menu-item routerLink="topics/InclusiveGovernance">Inclusive Governance</span>
+        <span mat-menu-item routerLink="topics/EconomicAndFinancialInclusion">Economic & Financial Inclusion</span>
+        <span mat-menu-item routerLink="topics/GenderBasedViolence">Gender Based Violence</span>
+        <span mat-menu-item routerLink="topics/DisabilityInclusion"> Disability Inclusion</span>
+        <span mat-menu-item routerLink="topics/Relationships">Relationships</span>
+        <span mat-menu-item routerLink="topics/WomenInLeadership">Women in Leadership</span>
+        <span mat-menu-item routerLink="topics/HumanRights">Human Rights</span>
+        <span mat-menu-item routerLink="topics/PeaceBuilding">Peace Building</span>
+    </mat-menu>
+    <button mat-button routerLink='about'>ABOUT</button>
+    <button mat-button [matMenuTriggerFor]="media">MEDIA CENTER</button>
+    <mat-menu #media="matMenu">
+        <span mat-menu-item routerLink="media/mag">MFW Magazine</span>
+        <span mat-menu-item routerLink="media/tv">MFW TV</span>
+    </mat-menu>
+    <button mat-button routerLink='join'>BE OUR REPORTER</button>
+    <button mat-icon-button aria-label="search the website">
+            <mat-icon (click)="showForm()">search</mat-icon>
+          </button>
+
+</mat-toolbar>
+<div id="search-form" *ngIf="searchForm">
+    <input matInput type="text">
+    <button mat-button>SEARCH</button>
+</div>
+<h3 *ngIf="!isMag" (mouseover)="cursorLink = mouseOver" (mouseout)=" cursorLink = mouseOut" routerLink="media/tv">Have you seen our <img [src]="acronymLogo" style="vertical-align: middle;" /> TV channel? Take a look <img [src]="cursorLink" style="vertical-align: middle;" /></h3>

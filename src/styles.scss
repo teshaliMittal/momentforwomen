@@ -1,6 +1,6 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -22,7 +22,7 @@ $mfw-ui-v8-theme: mat-light-theme($mfw-ui-v8-primary, $mfw-ui-v8-accent, $mfw-ui
 
 /* You can add global styles to this file, and also import other style files */
 
-$custom-typography: mat-typography-config( $font-family: 'Work Sans', $display-4: mat-typography-level(112px, 112px, 300), $display-3: mat-typography-level(56px, 56px, 200), $display-2: mat-typography-level(45px, 48px, 200), $display-1: mat-typography-level(34px, 40px, 200), $headline: mat-typography-level(24px, 32px, 200), $title: mat-typography-level(20px, 32px, 200), $subheading-2: mat-typography-level(16px, 28px, 200), $subheading-1: mat-typography-level(15px, 24px, 200), $body-2: mat-typography-level(14px, 24px, 200), $body-1: mat-typography-level(14px, 20px, 200), $caption: mat-typography-level(12px, 20px, 200), $button: mat-typography-level(14px, 14px, 200), $input: mat-typography-level(inherit, 1.125, 200));
+$custom-typography: mat-typography-config( $font-family: "Open-Sans", $display-4: mat-typography-level(112px, 112px, 100), $display-3: mat-typography-level(56px, 56px, 50), $display-2: mat-typography-level(45px, 48px, 50), $display-1: mat-typography-level(34px, 40px, 50), $headline: mat-typography-level(24px, 32px, 50), $title: mat-typography-level(20px, 32px, 50), $subheading-2: mat-typography-level(16px, 28px, 100), $subheading-1: mat-typography-level(15px, 24px, 100), $body-2: mat-typography-level(14px, 24px, 100), $body-1: mat-typography-level(14px, 20px, 100), $caption: mat-typography-level(12px, 20px, 100), $button: mat-typography-level(14px, 14px, 100), $input: mat-typography-level(inherit, 1.125, 100));
 // Override typography for all Angular Material, including mat-base-typography and all components.
 @include angular-material-typography($custom-typography);
 @include mat-core($custom-typography);
