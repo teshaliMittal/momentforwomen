@@ -13,7 +13,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-
+  {
+    path: 'home',
+    component: LandingPageComponent
+  },
   {
     path: 'about',
     component: AboutComponent
@@ -40,13 +43,13 @@ const routes: Routes = [
     component: JoinComponent
   },
   {
-    path: 'home',
-    component: LandingPageComponent
+    path: '**',
+    redirectTo: ''
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

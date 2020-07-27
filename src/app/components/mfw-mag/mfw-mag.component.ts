@@ -19,7 +19,7 @@ export class MfwMagComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
   openPDF() {
-    window.open("../../../assets/MFW Magazine June 2020.pdf");
+    window.open("assets/MFW Magazine June 2020.pdf");
   }
 
 }

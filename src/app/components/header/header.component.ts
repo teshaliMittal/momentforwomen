@@ -6,12 +6,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  cursorLink = "../../../assets/Arrow right default state.png";
-  mouseOut = "../../../assets/Arrow right default state.png";
-  mouseOver = "../../../assets/Arrow right hover state.png"
-  acronymLogo = "../../../assets/Acronym logo@2x.png";
+  cursorLink = "assets/Arrow right default state.png";
+  mouseOut = "assets/Arrow right default state.png";
+  mouseOver = "assets/Arrow right hover state.png"
+  acronymLogo = "assets/Acronym logo@2x.png";
   searchForm: boolean = false;
-  logoImage = "../../../assets/Logo_MFWalliance.png";
+  logoImage = "assets/Logo_MFWalliance.png";
   routerLink = "home";
   private _isMag;
   @Input()
@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
       this.logoImage = "...";
       this.routerLink = "media/mag";
     } else {
-      this.logoImage = "../../../assets/Logo_MFWalliance.png";
+      this.logoImage = "assets/Logo_MFWalliance.png";
       this.routerLink = "home";
     }
 
